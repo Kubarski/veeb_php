@@ -12,4 +12,9 @@ $vanus = 19;
 $kaal = 54.5;
 
 //var_dump($eesnimi); //muutuja sisu test vaatamine
+
+Echo 'Minu eesnimi on '.$eesnimi. '<br>';
+Echo 'Minu eesnimi on '.$perenimi. '<br>';
+Echo 'Ma olen '.$vanus. ' aastat vana<br>';
+Echo 'Ma kaalun '.$kaal. 'kg <br>';
 ?>
