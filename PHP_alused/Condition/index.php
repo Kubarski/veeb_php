@@ -1,6 +1,7 @@
 <?php
 for ($kord = 1 ; $kord <= 10; $kord++) {
-    header ('Refresh: 5');
+    header ('Refresh: 2');
+    echo $kord;
 }
 ?>
 <style>
