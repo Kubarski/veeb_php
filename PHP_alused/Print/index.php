@@ -13,4 +13,4 @@ echo '<hr>';
 
 print "Hello world!<br>";
 print "Hello world!<br>";
-print "Hello world!<br>";
+print "Hello world<br>";
