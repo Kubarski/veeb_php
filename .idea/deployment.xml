@@ -5,7 +5,7 @@
       <paths name="ikt">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/Veebiprogrameerimine_Kubarski/PHP_alused/Basics" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html/Veebiprogrameerimine_Kubarski/PHP_alused/Basics" local="$PROJECT_DIR$" web="/Veebiprogrameerimine_Kubarski/PHP_alused/Basics" />
           </mappings>
         </serverdata>
       </paths>
