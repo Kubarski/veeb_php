@@ -8,3 +8,9 @@
 Echo "Hello world!<br>";
 Echo "Hello world!<br>";
 Echo "Hello world!<br>";
+
+echo '<hr>';
+
+print "Hello world!<br>";
+print "Hello world!<br>";
+print "Hello world!<br>";
