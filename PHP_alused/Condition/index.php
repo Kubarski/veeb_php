@@ -10,10 +10,9 @@ $arv = rand(0,100);
 //arvutame jääk kahega jagamisel
 $jaak = $arv % 2;
 //kontrollime kui jääk on 0 - paaris arv
-$jaak = '0';
-if($jaak == 0) {
-    echo 'paaris';
+if($jaak == 0){
+    echo '<div class="paaris">'.$arv.'</div>';
 } else {
-    echo 'paaritu';
+    echo '<div class="paaritu">'.$arv.'</div>';
 }
 ?>
