@@ -20,9 +20,7 @@ for ($kord = 1 ; $kord <= 10; $kord++) {
     }
 </style>
 <?php
-for ($kord = 1 ; $kord <= 10; $kord++) {
 
-}
     //genereerime juhusliku arvu
     $arv = rand(0,100);
     //arvutame jääk kahega jagamisel
