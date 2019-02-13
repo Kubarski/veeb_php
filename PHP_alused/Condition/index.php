@@ -10,7 +10,7 @@ $arv = rand(0,100);
 //arvutame jääk kahega jagamisel
 $jaak = $arv % 2;
 //kontrollime kui jääk on 0 - paaris arv
-$jaak= '0';
+$jaak = '0';
 if($jaak == 0) {
     echo 'paaris';
 } else {
