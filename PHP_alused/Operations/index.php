@@ -13,4 +13,4 @@ $lahut = $x - $y;
 $korru = $x * $y;
 $jagam = $x / $y;
 $jaak = $x % $y;
-echo "Vastused: $x + $y = $liitm, $x - $y = $lahut, $x * $y = $korru, $x / $y = $jagam,$x % $y = $jaak";
+echo "Vastused: $x + $y = $liitm,<br> $x - $y = $lahut,<br> $x * $y = $korru,<br> $x / $y = $jagam,<br> $x % $y = $jaak";
