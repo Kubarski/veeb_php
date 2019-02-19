@@ -32,13 +32,10 @@ for ($kord = 1 ; $kord <= 10; $kord++) {
     $arv = rand(0,100);
     //defineerime jagaja algväärtuse
     $jagaja = 2;
-    //nii kaua kui jaak jagamisel ei ole 0 võtame jargmise jagaja väärtuse
-    while ($arv % $jagaja !=0) {
-        $jagaja++;
-    }
-    if($arv == $jagaja ) {
-    echo '<div class="algarv">'.$arv.'</div>';
+    //kui arv jagatud 2'ga on 0 siis on paaritu muul juhul paaris
+    if($arv % $jagaja != 0 ) {
+    echo '<div class="paaritu">'.$arv.'</div>';
     } else {
-    echo '<div class="tavaline">'.$arv.'</div>';
+    echo '<div class="paaris">'.$arv.'</div>';
     }
     ?>
