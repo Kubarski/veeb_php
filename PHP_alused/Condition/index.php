@@ -19,17 +19,26 @@ for ($kord = 1 ; $kord <= 10; $kord++) {
     .paaritu{
         background: green;
     }
+    .algarv{
+        background: deepskyblue;
+    }
+    .tavaline{
+        background: lightslategray;
+    }
 </style>
 <?php
 
-    //genereerime juhusliku arvu
+    //genereerime juhusliku arvu vahemikus 0 kuni 100
     $arv = rand(0,100);
-    //arvutame jääk kahega jagamisel
-    $jaak = $arv % 2;
-    //kontrollime kui jääk on 0 - paaris arv
-    if($jaak == 0){
-    echo '<div class="paaris">'.$arv.'</div>';
+    //defineerime jagaja algväärtuse
+    $jagaja = 2;
+    //nii kaua kui jaak jagamisel ei ole 0 võtame jargmise jagaja väärtuse
+    while ($arv % $jagaja !=0) {
+        $jagaja++;
+    }
+    if($arv == $jagaja ) {
+    echo '<div class="algarv">'.$arv.'</div>';
     } else {
-    echo '<div class="paaritu">'.$arv.'</div>';
+    echo '<div class="tavaline">'.$arv.'</div>';
     }
     ?>
