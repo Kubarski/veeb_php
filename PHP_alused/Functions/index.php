@@ -1,14 +1,24 @@
 <?php
 //defineerime funktsiooni nimega paarsuskontroll
 
-function paarsuseKontroll ($arv){
+function kaspaaris ($arv){
     if($arv %2 == 0) {
-        echo $arv . 'on paaris<br>';
+        $kontroll = true;
     } else {
-        echo $arv . 'on paaritu<br>';
+        $kontroll = false;
     }
+return $kontroll;
+}
+function kirjeldus($paaris) {
+    if ($paaris == true) {
+        echo ' on paaris';
+    } else {
+        echo ' on paaritu';
+    }
+    echo '<br>';
 }
 //kutsume funktsiooni tööle
 for ($arv=0; $arv <=10; $arv ++){
-    paarsuseKontroll($arv);
+    echo $arv;
+    kirjeldus(kaspaaris($arv));
 }
