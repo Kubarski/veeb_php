@@ -78,3 +78,4 @@ function filtreeriHinnaJargi($andmed, $algHind, $loppHind){
 usort($raamatud, 'vordleHinda');
 tabel($raamatud);
 
+tabel(filtreeriHinnaJargi($raamatud, 0, 100));
