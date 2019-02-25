@@ -5,79 +5,52 @@
  * Date: 20.02.2019
  * Time: 14:58
  */
-    $peppa = array (
-        'nimi'=>'Peppa',
-        'sugu'=>'naine',
-        'vanus'=>4,
-        'pikkus'=>1.04
+
+$raamat1 = array (
+    'nimi' => 'Elus',
+    'hind' => 16.95,
+    'autor' => 'Jaana Maling',
+    'keel' => 'eesti',
+    'zanr' =>'Biograafiad ja memuaarid'
+);
+$raamat2 = array (
+        'nimi' => 'Ma abiellusin sinuga',
+        'hind' => 4.00,
+        'autor' => 'Walter Trobisch',
+        'keel' => 'inglise',
+        'zanr' =>'Eneseabi'
     );
 
-    $george = array (
-        'nimi'=>'George',
-        'sugu'=>'mees',
-        'vanus'=>2,
-        'pikkus'=>0.95
-        );
-echo $peppa['nimi'].' on '.$peppa['vanus']. 'aastat vana <br>';
-echo $george['nimi'].' on '.$george['vanus']. 'aastat vana <br>';
+$raamat3 = array (
+     'nimi' => 'Nimed marmortahvlil',
+     'hind' => 17.60,
+     'autor' => 'Albert Kivikas',
+     'keel' => 'eesti',
+     'zanr' =>'Ilukirjandus'
+);
+    echo '<pre>';
+    print_r($raamat1);
+    echo '</pre>';
 
+    echo '<pre>';
+    print_r($raamat2);
+    echo '</pre>';
 
-$porsad = array(
-        array (
-        'Peppa',
-        'naine',
-        4,
-        1.04
-    ),
-        array(
-        'George',
-        'mees',
-        2,
-        0.95
-    ));
+    echo '<pre>';
+    print_r($raamat3);
+    echo '</pre>';
 
-foreach ($peppa as $nimi=>$vaartus){
+foreach ($raamat1 as $nimi=>$vaartus){
     echo $nimi.' - '.$vaartus.'<br>';
 }
 echo '<hr>';
-foreach ($george as $nimi=>$vaartus){
+foreach ($raamat2 as $nimi=>$vaartus){
+    echo $nimi.' - '.$vaartus.'<br>';
+}
+echo '<hr>';
+foreach ($raamat3 as $nimi=>$vaartus){
     echo $nimi.' - '.$vaartus.'<br>';
 }
 echo '<hr>';
 
-$porsad = array();
-$porsad[] = $peppa;
-$porsad[] = $george;
-echo '<pre>';
-print_r($porsad);
-echo '</pre>';
 
-
-$porsad = array ();
-$porsad ['peppa'] = $peppa;
-$porsad ['george'] = $george;
-
-$porsad['peppa']['lemmik varv'] = 'punane';
-$porsad['george']['lemmik varv'] = 'sinine';
-
-foreach ($porsad as $porsaseNimi=>$porsaseAndmed){
-    echo '<b>'. $porsaseNimi.'</b><br>';
-
-}
-foreach ($porsad as $porsaseNimi=>$porsaseAndmed){
-    echo '<b>'.$porsaseNimi.'</b><br>';
-    echo '<ul>';
-    foreach ($porsaseAndmed as $nimetus=>$vaartus){
-        echo '<li>'.$nimetus.' - '.$vaartus.'</li>';
-    }
-    echo '</ul>';
-}
-
-foreach ($porsad as $porsaseNimi=>$porsaseAndmed){
-    echo '<b>'.$porsaseNimi.'</b><br>';
-    echo '<ul>';
-    foreach ($porsaseAndmed as $nimetus=>$vaartus){
-        echo '<li>'.$nimetus.' - '.$vaartus.'</li>';
-    }
-    echo '</ul>';
-}
