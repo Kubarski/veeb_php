@@ -46,4 +46,30 @@ function tabelFailist($failiNimi){
         echo '</table>';
     }
 }
+
+function tabeliRida($andmed){
+    echo '<tr>';
+    foreach ($andmed as $elemendiNimetus => $elemendiVaartus){
+        echo '<td>'.$elemendiVaartus.'</td>';
+    }
+    echo '</tr>';
+}
+function tabel($andmed)
+{
+    echo '<table>';
+    tabeliPais(array_keys($andmed[0]));
+    echo '<tbody>';
+    foreach ($andmed as $element) {
+        tabeliRida($element);
+    }
+    echo '</tbody>';
+    echo '</table>';
+}
+
+function lisaAndmeteVorm(){
+    echo'
+    <form action="'.$_SERVER['PHP_SELF'].'" method=get>';
+    
+}
+
 tabelFailist('raamatud.txt');
