@@ -60,6 +60,17 @@ if(checkdate(02,29,2016)){
 }
 echo '<br>';
 //-------------------------------------------------------------
+//Leia, kas sul on järgmine aasta juubel?
+$minuSynniKuupaev = mktime(0,0,0,11,27,1981);
+$aastaHetkel = date('Y');
+$minuSynniPaevJargmiselAastal = mktime(0,0,0,11,27, $aastaHetkel+1);
+$vanusAastates = round(($minuSynniPaevJargmiselAastal - $minuSynniKuupaev) / (60 * 60 * 24 * 365));
+if($vanusAastates % 5 == 0){
+    echo 'Aastal '.($aastaHetkel+1).' Sinul on juubel, saad '.$vanusAastates.' vanaks'.'<br>';
+} else {
+    echo 'Aastal '.($aastaHetkel+1).' Sinul pole juubeli, saad alles '.$vanusAastates.' vanaks'.'<br>';
+}
+echo '<hr>';
 
 //Tervituse kood
 date_default_timezone_set('Europe/Tallinn');
