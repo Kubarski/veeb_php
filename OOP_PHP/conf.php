@@ -7,7 +7,7 @@ setlocale(LC_TIME, 'Estonia');
 // reporting for tests
 error_reporting(E_ALL);
 // app constants
-define('SITENAME', 'Site real name');
+//define('SITENAME', 'Site real name');
 // model file system constants
 define('MODEL_DIR', BASE_DIR.'model/');
 define('TMPL_DIR', BASE_DIR.'views/');
