@@ -67,4 +67,5 @@ class Linkobject extends Http
         return $link;
     }
 }
+
 ?>
