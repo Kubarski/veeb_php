@@ -23,7 +23,7 @@ $siteRoles = array(
     ROLE_ADMIN => 'Administraator',
     ROLE_USER => 'Kasutaja'
 );
-define('DEFAULT_CONTROLLER', 'default');
+define('DEFAULT_CONTROLLER', 'menu/menu');
 // import support functions
 require_once(LIB_DIR.'utils.php');
 // import model classes
