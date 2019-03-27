@@ -40,6 +40,10 @@ foreach ($dishTypes as $dishTypeData){
     $dishType->set('type_data', $dishData->parse());
     $mainContent->add('menu', $dishType->parse());
 }
+$dish->set('discount', discount($dishContent['dish_price'], 15));
+$dishData->add('dishes', $dish->parse());
+$dishType->set('type_data', $dishData->parse());
+
 // page content from controller
 // add action control
 require_once 'controller.php';
